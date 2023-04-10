@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="1614593723_28-p-kniga-na-belom-fone-kartinki-52.png" />
+    <None Remove="book_for_main_form.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="1614593723_28-p-kniga-na-belom-fone-kartinki-52.png" />
+    <Resource Include="book_for_main_form.png" />
+  </ItemGroup>
+
+</Project>
