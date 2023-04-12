@@ -8,16 +8,16 @@
         Title="Warehouse" Height="450" Width="800" Background="#FF3FE6C3" ResizeMode="NoResize" >
     <!--WindowStyle="None"-->
     <Grid>
-        <Label Content="WAREДОМ" HorizontalAlignment="Center" Margin="0,10,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Top" Height="131" Width="780" FontSize="72" FontFamily="Sitka Display"/>
-        <Label Content="Логин" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="109,186,0,0" VerticalAlignment="Top" Height="42" Width="121" FontSize="24"/>
-        <ComboBox HorizontalAlignment="Left" Margin="230,186,0,0" VerticalAlignment="Top" Width="413" Height="42" FontSize="24">
+        <Label Content="WAREHOUSE" HorizontalAlignment="Center" Margin="0,10,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Top" Height="131" Width="780" FontSize="72" FontFamily="Sitka Display"/>
+        <Label Content="Username" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="109,186,0,0" VerticalAlignment="Top" Height="42" Width="121" FontSize="24"/>
+        <ComboBox Name="combo1" HorizontalAlignment="Left" Margin="230,186,0,0" VerticalAlignment="Top" Width="413" Height="42" FontSize="24">
             <ComboBoxItem Content="Администратор" FontSize="24"/>
             <ComboBoxItem Content="Инженер" FontSize="24"/>
         </ComboBox>
-        <Label Content="Пароль" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="109,258,0,0" VerticalAlignment="Top" Height="42" Width="121" FontSize="24"/>
+        <Label Content="Password" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="109,258,0,0" VerticalAlignment="Top" Height="42" Width="121" FontSize="24"/>
         <TextBox Name="textbox1" HorizontalAlignment="Left" Margin="235,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="408" Height="42" FontSize="24"/>
-        <Button Content="Войти" HorizontalAlignment="Left" Margin="140,335,0,0" VerticalAlignment="Top" Height="60" Width="180" FontSize="24" Click="Button_Click_1"/>
-        <Button Content="Выйти" HorizontalAlignment="Left" Margin="463,335,0,0" VerticalAlignment="Top" Height="60" Width="180" FontSize="24" Click="Button_Click"/>
+        <Button Content="Log in" HorizontalAlignment="Left" Margin="140,335,0,0" VerticalAlignment="Top" Height="60" Width="180" FontSize="24" Click="Button_Click_1"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="463,335,0,0" VerticalAlignment="Top" Height="60" Width="180" FontSize="24" Click="Button_Click"/>
         <Image HorizontalAlignment="Left" Height="124" Margin="666,10,0,0" VerticalAlignment="Top" Width="121" Source="/1614593723_28-p-kniga-na-belom-fone-kartinki-52.png"/>
 
     </Grid>

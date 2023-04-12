@@ -19,14 +19,17 @@ namespace Warehouse
     /// </summary>
     public partial class BaseWindow : Window
     {
-        AddingWindow win3 = new AddingWindow();
-        public BaseWindow()
+        string cmbox;
+        public BaseWindow(string cmb)
         {
             InitializeComponent();
+            cmbox = cmb;
+            label1.Content = cmbox;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            AddingWindow win3 = new AddingWindow();
             win3.Show();
         }
 

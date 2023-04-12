@@ -17,10 +17,9 @@ namespace Warehouse
 {
     public partial class MainWindow : Window
     {
-        BaseWindow win2 = new BaseWindow();
+        public string cmb;
         public MainWindow()
         {
-            
             InitializeComponent();
         }
 
@@ -37,6 +36,8 @@ namespace Warehouse
             }
             else
             {
+                cmb = combo1.Text;
+                BaseWindow win2 = new BaseWindow(cmb);
                 win2.Show();
                 this.Close();
             }
