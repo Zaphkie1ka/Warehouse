@@ -15,29 +15,18 @@ using System.Windows.Shapes;
 namespace Warehouse
 {
     /// <summary>
-    /// Логика взаимодействия для AddingWindow.xaml
+    /// Логика взаимодействия для ShowWindow.xaml
     /// </summary>
-    public partial class AddingWindow : Window
+    public partial class ShowWindow : Window
     {
-        private Table Table {get;set;}
-
-        public AddingWindow(Table table)
+        public ShowWindow()
         {
             InitializeComponent();
-
-            Table = table;
-
-            DataContext = Table;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            
         }
     }
 }

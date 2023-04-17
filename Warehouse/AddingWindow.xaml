@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Warehouse"
         mc:Ignorable="d"
-        Title="AddingWindow" Height="450" Width="800">
+        Title="AddingWindow" Height="450" Width="800" Background="#FF3FE6C3" ResizeMode="NoResize">
     <Grid>
-        
+        <Label Content="ID документа" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="82,92,0,0" VerticalAlignment="Top" Height="41" Width="144" FontSize="20"/>
+        <Label Content="Название документа" HorizontalAlignment="Left" Margin="82,164,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="20"/>
+        <TextBox Text="{Binding Id}" Name="iddoc" HorizontalAlignment="Left" Margin="419,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="329" Height="41" FontSize="20"/>
+        <TextBox Text="{Binding Name}" Name="namedoc" HorizontalAlignment="Left" Margin="419,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="329" Height="41" FontSize="20"/>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="154,346,0,0" VerticalAlignment="Top" Height="56" Width="163" FontSize="20" Click="Button_Click_1"/>
+        <Button Content="Отменить" HorizontalAlignment="Left" Margin="469,346,0,0" VerticalAlignment="Top" Height="56" Width="163" FontSize="20" Click="Button_Click"/>
     </Grid>
 </Window>

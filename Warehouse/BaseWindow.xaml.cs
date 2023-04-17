@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,16 +27,28 @@ namespace Warehouse
             cmbox = cmb;
             label1.Content = cmbox;
         }
-
+        public BaseWindow()
+        {
+            InitializeComponent();
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            AddingWindow win3 = new AddingWindow();
-            win3.Show();
+            Table table = new Table();
+            AddingWindow win3 = new AddingWindow(table);
+            win3.ShowDialog();
+            
+        }
+
+        private void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+            
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            ShowWindow win4 = new ShowWindow();
+            win4.ShowDialog();
         }
     }
+    
 }

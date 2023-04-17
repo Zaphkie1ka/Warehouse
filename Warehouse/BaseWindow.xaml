@@ -10,10 +10,19 @@
         <Label Content="Мой" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="65" Width="230" FontSize="48"/>
         <Label Content="Склад" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Height="65" Width="230" FontSize="48"/>
         <Button Content="Добавить запись" HorizontalAlignment="Left" Margin="10,198,0,0" VerticalAlignment="Top" Click="Button_Click" Height="28" Width="230"/>
-        <Button Content="Просмотреть запись" HorizontalAlignment="Left" Margin="10,235,0,0" VerticalAlignment="Top" Click="Button_Click_1" Height="28" Width="230"/>
         <Label Name="label1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="" HorizontalAlignment="Left" Margin="80,129,0,0" VerticalAlignment="Top" Height="39" Width="160" FontSize="16"/>
         <Label Content="Запись:" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="10,129,0,0" VerticalAlignment="Top" Height="39" Width="65" FontSize="16"/>
-        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="259,10,10,10"/>
+        <DataGrid Name="Grid" Margin="245,10,10,10">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Click="Button_Click_1">Просмотреть</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
 
     </Grid>
 </Window>

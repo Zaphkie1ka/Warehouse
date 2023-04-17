@@ -30,9 +30,13 @@ namespace Warehouse
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            if(textbox1.Text != "123456")
+            if (textbox1.Text != "123456" || combo1.Text != "Администратор")
             {
-                MessageBox.Show("Неправильный пароль!!!");
+                MessageBox.Show("Неправильный логин или пароль!");
+            }
+            else if (textbox1.Text != "123456" || combo1.Text != "Администратор")
+            {
+
             }
             else
             {
@@ -40,6 +44,7 @@ namespace Warehouse
                 BaseWindow win2 = new BaseWindow(cmb);
                 win2.Show();
                 this.Close();
+            }
             }
         }
     }
